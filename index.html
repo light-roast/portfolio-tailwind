@@ -12,13 +12,19 @@
 <body class="font-dm-sans bg-color-background text-white">
     <div class="w-[90%] overflow-hidden mx-auto max-w-screen-xl">
         <header>
-            <nav>
-                <a>
-                    <h1>Daniel E</h1>
+            <nav class="flex h-20 items-center justify-between">
+                <a class=" w-1/2 max-w-[200px]">
+                    <h1 class="block w-full">Daniel E</h1>
                 </a>
-                <input type="checkbox" id="menu">
-                <label for="menu">Holi</label>
-                <ul>
+                <input type="checkbox" id="menu" class="hidden peer/menu">
+                <label for="menu" class="w-10 h-10 bg-menu cursor-pointer
+                bg-cover bg-center bg-green-color rounded-lg 
+                peer-checked/menu:bg-close transition-all z-10
+                md:hidden"></label>
+                <ul class="fixed inset-0 bg-menu-color px-[5%] 
+                grid gap-6 auto-rows-max content-center justify-items-center
+                clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500
+                md:clip-circle-full md:relative md:grid-flow-col md:bg-transparent">
                     <li>
                         <a href="#">About me</a>
                     </li>

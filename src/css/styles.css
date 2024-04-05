@@ -659,6 +659,10 @@ video {
   inset: -0.25rem;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -669,6 +673,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .float-start {
@@ -823,6 +831,22 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -837,6 +861,14 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .max-w-screen-xl {
@@ -901,6 +933,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -1177,6 +1213,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.auto-rows-max {
+  grid-auto-rows: max-content;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1359,6 +1399,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1677,6 +1721,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1811,6 +1859,20 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
+.bg-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 174 96 / var(--tw-bg-opacity));
+}
+
+.bg-menu-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 37 84 / var(--tw-bg-opacity));
+}
+
+.bg-menu {
+  background-image: url('../assets/bx-menu.svg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1829,6 +1891,10 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -1858,6 +1924,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat {
@@ -1919,6 +1989,11 @@ video {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.px-\[5\%\] {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .text-left {
@@ -2371,6 +2446,24 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-\[clip-path\] {
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2433,6 +2526,11 @@ video {
   forced-color-adjust: none;
 }
 
+.clip-circle-0 {
+  -webkit-clip-path: circle(0% at top right);
+          clip-path: circle(0% at top right);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2491,9 +2589,41 @@ video {
   text-align: center;
 }
 
+.peer\/menu:checked ~ .peer-checked\/menu\:bg-close {
+  background-image: url('../assets/bxs-x-circle.svg');
+}
+
+.peer\/menu:checked ~ .peer-checked\/menu\:clip-circle-full {
+  -webkit-clip-path: circle(150% at top right);
+          clip-path: circle(150% at top right);
+}
+
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:clip-circle-full {
+    -webkit-clip-path: circle(150% at top right);
+            clip-path: circle(150% at top right);
   }
 }
 
